@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$font: 'Roboto', sans-serif;
+$mainColor: #3c3c3c;
+$backgroundColor: #1f1e1e;
+$alternateColor: #ffffff;
+$secondaryColor: #425e44;
+%btn {
+  color: $alternateColor;
+  line-height: 9px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color: $backgroundColor;
+  padding: 15px 26px 12px;
+  border: none;
+  cursor: pointer;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: $font;
+  font-size: 9px;
+  color: $mainColor;
+  .container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 10px;
+    .btn {
+      @extend %btn;
+    }
+    @media (max-width: 1024px) {
+      max-width: 90%;
+    }
+  }
+}
