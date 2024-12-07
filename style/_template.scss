@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-$font: 'Roboto', sans-serif;
+$font: "Roboto", sans-serif;
 $mainColor: #3c3c3c;
 $backgroundColor: #1f1e1e;
 $alternateColor: #ffffff;
@@ -24,6 +24,7 @@ body {
   font-family: $font;
   font-size: 9px;
   color: $mainColor;
+  background-color: $alternateColor;
   .container {
     max-width: 1120px;
     margin: 0 auto;
